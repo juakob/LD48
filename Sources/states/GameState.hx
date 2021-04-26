@@ -185,7 +185,7 @@ class GameState extends State {
 				addChild(sprint);
 			}
 			for (entityData in section.l_Entities.all_Ending1) {
-				var ending1 = new Trigger(section.worldX + entityData.cx * 16, section.worldY + entityData.cy * 16, entityData.width,entityData.height);
+				var ending1 = new Trigger(section.worldX + entityData.cx * 16, section.worldY + entityData.cy * 16, entityData.width,4);
 				ending1.collision.userData=endGame1;
 				triggers.add(ending1.collision);
 				endEnd=new FastVector2(section.worldX +entityData.f_endPos.cx* 16, section.worldY +entityData.f_endPos.cy* 16);
