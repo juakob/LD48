@@ -125,7 +125,7 @@ class Player extends Entity {
 
 	public function inWater() {
 		collision.accelerationY = 60*gravitySign;
-		jumpPower = 50;
+		jumpPower = 100;
 		collision.maxVelocityX = 30;
 		collision.maxVelocityY = 80;
 		

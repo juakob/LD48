@@ -1,5 +1,8 @@
 package states;
 
+import com.gEngine.shaders.ShRgbSplit;
+import com.gEngine.display.Blend;
+import com.gEngine.shaders.ShRetro;
 import gameObjects.TitleScreen;
 import ldtk.Point;
 import gameObjects.Trigger;
@@ -193,7 +196,7 @@ class GameState extends State {
 				//addChild(sprint);
 			}
 		}
-
+		//stage.defaultCamera().postProcess=new ShRetro(Blend.blendNone());
 		// stage.defaultCamera().setDeadZone(88, 32, 16 * 4, 24 * 2);
 	}
 
